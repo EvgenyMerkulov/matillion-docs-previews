@@ -1,0 +1,88 @@
+site_name: Matillion Docs
+nav:
+  - Home: 'index.md'
+  - Matillion Data Loader:
+    - What is Matillion Data Loader?: data-loader/index.md
+    - Getting support: data-loader/getting-support.md
+    - Batch sources:
+      - MongoDB: data-loader/mongodb.md
+      - MySQL: data-loader/mysql.md
+    - Destinations:
+      - Set up Google BigQuery: data-loader/set-up-google-bigquery.md
+      - Connect to Google BigQuery: data-loader/connect-to-bigquery.md
+      - Connect to Snowflake: data-loader/connect-to-snowflake.md
+  - Matillion ETL:
+    - What is Matillion ETL?: etl/index.md
+    - Project Menu:
+      - Queue Messaging:
+        - Switch Project: etl/switch-project.md
+        - Test: etl/test.md
+    - Orchestration:
+      - Connectors:
+        - Google:
+          - Google Sheets Query: etl/google-sheets-query.md
+          - Google Query Authentication Guide: etl/google-query-authentication-guide.md
+    - Release notes:
+      - 1.64: etl/164-patch-notes.md
+  - Matillion Hub:
+    - What is Matillion Hub?: matillion-hub/index.md
+  - Unlimited Scalability:
+    - Overview: unlimited-scalability/index.md
+    - Get started:
+        - Create an ETL agent: unlimited-scalability/create-an-etl-agent.md
+        - AWS Fargate manual agent setup: unlimited-scalability/aws-fargate-manual-agent-setup.md
+        - Add ETL agent credentials to AWS Secrets Manager : unlimited-scalability/add-etl-agent-credentials-to-aws-secrets-manager.md
+    
+
+
+theme: 
+  name: 'material'
+  palette:
+    - scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.ico
+  logo: assets/white-logo.svg
+  features:
+    - content.tabs.link
+    - navigation.instant
+    - navigation.prune
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/shortcuts.js
+
+copyright: Copyright &copy; 2022 - Matillion
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+extra:
+  generator: false
