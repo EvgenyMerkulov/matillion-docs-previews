@@ -3,18 +3,16 @@ nav:
   - Home: 'index.md'
   - Unlimited Scale:
     - Overview: unlimited-scale/index.md
-    - Get started:
-        - Create an ETL agent: unlimited-scale/create-an-etl-agent.md
-        - Add ETL agent credentials to AWS Secrets Manager : unlimited-scale/add-etl-agent-credentials-to-aws-secrets-manager.md
-        - AWS Fargate manual agent setup: unlimited-scale/aws-fargate-manual-agent-setup.md
-        - Editing Permissions for Unlimited Scale: unlimited-scale/editing-permissions-for-unlimited-scale.md
-        - Running Matillion ETL jobs with Unlimited Scale: unlimited-scale/running-matillion-etl-jobs-with-unlimited-scale.md
+    - Create an ETL agent: unlimited-scale/create-an-etl-agent.md
+    - Add ETL agent credentials to AWS Secrets Manager : unlimited-scale/add-etl-agent-credentials-to-aws-secrets-manager.md
+    - AWS Fargate manual agent setup: unlimited-scale/aws-fargate-manual-agent-setup.md
+    - Editing Permissions for Unlimited Scale: unlimited-scale/editing-permissions-for-unlimited-scale.md
+    - Running Matillion ETL jobs with Unlimited Scale: unlimited-scale/running-matillion-etl-jobs-with-unlimited-scale.md
   - Matillion Custom Connector:
     - Overview: mcc/index.md
-    - Get started:
-        - Custom Connector Setup: mcc/custom-connector-setup.md
-        - Authentication: mcc/manage-oauths.md
-        - Exporting your own connector to Matillion ETL: mcc/exporting-your-own-connector-to-matillion-etl.md
+    - Custom Connector Setup: mcc/custom-connector-setup.md
+    - Authentication: mcc/manage-oauths.md
+    - Exporting your own connector to Matillion ETL: mcc/exporting-your-own-connector-to-matillion-etl.md
 
     
 

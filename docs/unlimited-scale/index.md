@@ -2,7 +2,7 @@
 
 Unlimited Scale allows a compatible Matillion ETL job to be executed and scheduled via the Matillion SaaS Platform and in a user's data plane by use of an ETL Agent—benefiting from the enhanced scalability capabilities of this new architecture. The data plane and control plane split ensures data sovereignty is adhered to.
 
-### What's a data plane? 
+### What's a data plane?
 
 This is an abstract concept that ties together an execution environment, for example, AWS Fargate, that uses an ETL Agent. This ETL Agent will be provided by Matillion as a Docker image.
 

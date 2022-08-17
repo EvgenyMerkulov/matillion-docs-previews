@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#welcome-to-the-documentation-for-matillion-unlimited-scale" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -309,9 +314,79 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-documentation-for-matillion-unlimited-scale" class="md-nav__link">
+    Welcome to the documentation for Matillion Unlimited Scale
+  </a>
+  
+    <nav class="md-nav" aria-label="Welcome to the documentation for Matillion Unlimited Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-a-data-plane" class="md-nav__link">
+    What's a data plane?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-etl-agent" class="md-nav__link">
+    What's the ETL Agent?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-agent-gateway" class="md-nav__link">
+    What's the Agent Gateway?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerations" class="md-nav__link">
+    Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-us-improve-matillion-unlimited-scale" class="md-nav__link">
+    Help us improve Matillion Unlimited Scale
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -568,6 +643,62 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-documentation-for-matillion-unlimited-scale" class="md-nav__link">
+    Welcome to the documentation for Matillion Unlimited Scale
+  </a>
+  
+    <nav class="md-nav" aria-label="Welcome to the documentation for Matillion Unlimited Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-a-data-plane" class="md-nav__link">
+    What's a data plane?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-etl-agent" class="md-nav__link">
+    What's the ETL Agent?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-agent-gateway" class="md-nav__link">
+    What's the Agent Gateway?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerations" class="md-nav__link">
+    Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-us-improve-matillion-unlimited-scale" class="md-nav__link">
+    Help us improve Matillion Unlimited Scale
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -582,7 +713,38 @@
 
   <h1>Overview</h1>
 
-<p>Hello.</p>
+<h2 id="welcome-to-the-documentation-for-matillion-unlimited-scale">Welcome to the documentation for Matillion Unlimited Scale</h2>
+<p>Unlimited Scale allows a compatible Matillion ETL job to be executed and scheduled via the Matillion SaaS Platform and in a user's data plane by use of an ETL Agent—benefiting from the enhanced scalability capabilities of this new architecture. The data plane and control plane split ensures data sovereignty is adhered to.</p>
+<h3 id="whats-a-data-plane">What's a data plane?</h3>
+<p>This is an abstract concept that ties together an execution environment, for example, AWS Fargate, that uses an ETL Agent. This ETL Agent will be provided by Matillion as a Docker image.</p>
+<h3 id="whats-the-etl-agent">What's the ETL Agent?</h3>
+<p>The ETL Agent is the software that executes the job tasks that traditionally run within Matillion ETL. The ETL Agent communicates with the Agent Gateway by an egress-only method. This provides the job tasks, from the SaaS platform, that will be executed. The ETL Agent can scale up by having many instances running concurrently and this can be set based on requirements. There are plans to make this scalable; however, at this moment, they are sized manually or via any cloud provider’s own scaling mechanism. </p>
+<h3 id="whats-the-agent-gateway">What's the Agent Gateway?</h3>
+<p>The Agent Gateway is the communication portal that agents will use to communicate with the SaaS Platform. The ETL Agents poll the Agent Gateway for work, as well as send responses for those work tasks.</p>
+<hr />
+<h2 id="considerations">Considerations</h2>
+<ul>
+<li>Matillion Unlimited Scale is presently only available for Matillion ETL for Snowflake (AWS).</li>
+<li>Matillion Unlimited Scale private preview supports a reduced list of components. However, this list will grow over time.</li>
+<li>Matillion will provide you with a specific Matillion ETL instance for Unlimited Scale.</li>
+<li>To run Matillion Unlimited Scale, you must create an ETL Agent. For this to work successfully, you will need to create a number of resources in Amazon Web Services (AWS).</li>
+<li>Matillion will supply a demo job once you are set up with Matillion Unlimited Scale. If this demo job runs successfully, then your Matillion Unlimited Scale instance is connected to your ETL Agent and working as expected.</li>
+<li>Matillion recommends that credentials are stored externally where possible—for example, via AWS Secrets Manager.</li>
+<li>OAuth entries may need to be recreated—such as for Salesforce Query.</li>
+</ul>
+<p>Matillion doesn't recommend:</p>
+<ul>
+<li>Running production workloads during the private preview of Matillion Unlimited Scale.</li>
+<li>Running workloads with sensitive data during the private preview period of Matillion Unlimited Scale.</li>
+</ul>
+<hr />
+<h2 id="help-us-improve-matillion-unlimited-scale">Help us improve Matillion Unlimited Scale</h2>
+<p>Matillion Unlimited Scale is still in development. Please get in touch with any problems you encounter while using this product.</p>
+<ul>
+<li>More components will be enabled over time.</li>
+<li>If a component is missing and you feel you need it, let us know and we will try to provide a workaround.</li>
+<li>Let us know about any blockers you encounter.</li>
+</ul>
 
               
             </article>
