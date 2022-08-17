@@ -6,7 +6,6 @@ This page is a guide to manually installing an ETL agent into AWS Fargate.
 
 ## Prerequisites
 
-- 
 - Each time you click **Create** in AWS, a coloured banner will appear at the top of the AWS UI.
     - Blue indicates the creation of a resource is in-progress.
     - Green indicates the creation of a resource has completed.
@@ -77,8 +76,6 @@ Click **Create** to confirm creation of the cluster. On successful creation of t
 ---
 
 ## Task definitions
-
-
 
 1. In the AWS console, type `Elastic Container Service` in the search bar and choose that service.
 2. In the left-hand menu, click **Task definitions**.

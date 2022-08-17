@@ -1,37 +1,21 @@
 site_name: Matillion Docs
 nav:
   - Home: 'index.md'
-  - Matillion Data Loader:
-    - What is Matillion Data Loader?: data-loader/index.md
-    - Getting support: data-loader/getting-support.md
-    - Batch sources:
-      - MongoDB: data-loader/mongodb.md
-      - MySQL: data-loader/mysql.md
-    - Destinations:
-      - Set up Google BigQuery: data-loader/set-up-google-bigquery.md
-      - Connect to Google BigQuery: data-loader/connect-to-bigquery.md
-      - Connect to Snowflake: data-loader/connect-to-snowflake.md
-  - Matillion ETL:
-    - What is Matillion ETL?: etl/index.md
-    - Project Menu:
-      - Queue Messaging:
-        - Switch Project: etl/switch-project.md
-        - Test: etl/test.md
-    - Orchestration:
-      - Connectors:
-        - Google:
-          - Google Sheets Query: etl/google-sheets-query.md
-          - Google Query Authentication Guide: etl/google-query-authentication-guide.md
-    - Release notes:
-      - 1.64: etl/164-patch-notes.md
-  - Matillion Hub:
-    - What is Matillion Hub?: matillion-hub/index.md
-  - Unlimited Scalability:
-    - Overview: unlimited-scalability/index.md
+  - Unlimited Scale:
+    - Overview: unlimited-scale/index.md
     - Get started:
-        - Create an ETL agent: unlimited-scalability/create-an-etl-agent.md
-        - AWS Fargate manual agent setup: unlimited-scalability/aws-fargate-manual-agent-setup.md
-        - Add ETL agent credentials to AWS Secrets Manager : unlimited-scalability/add-etl-agent-credentials-to-aws-secrets-manager.md
+        - Create an ETL agent: unlimited-scale/create-an-etl-agent.md
+        - Add ETL agent credentials to AWS Secrets Manager : unlimited-scale/add-etl-agent-credentials-to-aws-secrets-manager.md
+        - AWS Fargate manual agent setup: unlimited-scale/aws-fargate-manual-agent-setup.md
+        - Editing Permissions for Unlimited Scale: unlimited-scale/editing-permissions-for-unlimited-scale.md
+        - Running Matillion ETL jobs with Unlimited Scale: unlimited-scale/running-matillion-etl-jobs-with-unlimited-scale.md
+  - Matillion Custom Connector:
+    - Overview: mcc/index.md
+    - Get started:
+        - Custom Connector Setup: mcc/custom-connector-setup.md
+        - Manage OAuths: mcc/manage-oauths.md
+        - Exporting your own connector to Matillion ETL: mcc/exporting-your-own-connector-to-matillion-etl.md
+
     
 
 
