@@ -1,5 +1,7 @@
 ## Overview
 
+This topic explains how to create an ETL agent in Matillion Hub.
+
 ---
 
 ## Prerequisites
@@ -20,6 +22,7 @@
 |Agent name|A unique name for your new ETL agent. Maximum 30 characters. Accepts both uppercase and lowercase A-z, 0-9, whitespace (not the first character), hyphens, underscores, and single quote characters.|
 |AWS region|Select the AWS region to create your ETL agent within. New to regions? Read [_Regions and Availability Zones_](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).|
 |Agent version|This is the agent version track that will be deployed. The latest version in the displayed track will be used every time your service is restarted.|
+
 When you are happy with the ETL agent configuration, click **Create agent**.
 
 ---
@@ -28,7 +31,4 @@ When you are happy with the ETL agent configuration, click **Create agent**.
 
 The **Agent details** table lists provision metadata for your agent including the agent name, AWS region, and agent version set on the **Create an ETL agent** page. Also included are the agent type, the provisioning type, the cloud provider, and the deployment method.
 
----
-
-## Agent image URI
-
+The parameters and values in the sections **Agent image URI**, **Agent environment variables**, and **Credentials** are required when configuring your ETL agent with AWS Fargate.
