@@ -14,7 +14,7 @@ This topic explains how to create an ETL agent in Matillion Hub.
 ## Create an ETL agent
 
 1. Navigate to the **Select your service** page. Get there by clicking the Platform Navigation button (the 9-dot square in the top-left of the UI) and then by clicking **Matillion start**.
-2. Click the **Manage ETL Agents** tile.
+2. Click the **Manage ETL Agents** tile. Can't see it? Read [_Editing permissions for Unlimited Scale_](/unlimited-scale/docs/editing-permissions-for-unlimited-scale).
 3. If you haven't created an ETL agent yet, you'll land on **Create your first ETL agent**. Click **Create an ETL agent**.
 
 |Property|Description|
