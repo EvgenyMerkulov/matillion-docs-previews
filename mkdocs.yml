@@ -13,7 +13,7 @@ nav:
     - Overview: mcc/index.md
     - Get started:
         - Custom Connector Setup: mcc/custom-connector-setup.md
-        - Manage OAuths: mcc/manage-oauths.md
+        - Authentication: mcc/manage-oauths.md
         - Exporting your own connector to Matillion ETL: mcc/exporting-your-own-connector-to-matillion-etl.md
 
     
