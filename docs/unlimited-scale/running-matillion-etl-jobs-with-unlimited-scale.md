@@ -22,7 +22,7 @@ This topic covers running orchestration and transformation jobs in Matillion ETL
 Read [Create an ETL Agent](/unlimited-scale/docs/create-an-etl-agent) to learn how to create an ETL agent if you don't have one yet.
 :::
 
-## Running a jobs with unlimited scale
+## Running  jobs with unlimited scale
 
 1. Once you have an orchestration job or a transformation job on the canvas, right-click the canvas and choose **Run Job using Agent**. Alternatively, right-click on a job in the chosen project on the left of the UI, and choose **Run Job using Agent**.
 2. The **Publish Job to Hub** dialog will open, displaying a manifest of jobs to run via checkbox.
@@ -45,7 +45,6 @@ To view agent task history, click **Project** → **Agent Task History**.
 ## Supported components
 
 ### Orchestration components
-
 
 - Alter Warehouse
 - Start

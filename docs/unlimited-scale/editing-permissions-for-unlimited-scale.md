@@ -6,7 +6,6 @@ To use Matillion Unlimited Scale with Matillion ETL, a Matillion Hub member's pe
 
 ## Edit a member
 
-
 1. Log in to [Matillion Hub](https://www.hub.matillion.com/).
 2. Click **Platform Navigation** and choose **Matillion Start**.
 3. Choose **Members** in the left-hand navigation.
